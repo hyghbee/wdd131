@@ -1,0 +1,148 @@
+/* Root variables for reusability */
+:root {
+  --brand-blue: #1f4c6b;
+  --highlight-color: gold;
+  --hover-bg: white;
+  --hover-text: var(--brand-blue);
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header */
+header {
+  background-color: var(--brand-blue);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .highlight {
+  color: var(--highlight-color);
+}
+
+.block-span {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--brand-blue);
+  padding: 10px;
+  gap: 20px;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-text);
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+/* Cards */
+section {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-me img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 8px;
+}
+
+/* Location Section */
+.location img {
+  width: 100px;
+}
+
+/* Resources */
+.resources ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resources li a {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--brand-blue);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+}
+
+footer p:nth-child(2) {
+  color: #ffff66;
+  font-weight: bold;
+}
+
+/* Responsive Grid for Main Section (Optional Stretch) */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.nav-wrapper {
+  width: 100%;
+  background-color: var(--brand-blue);
+}
+
+.main-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+}
